@@ -1,0 +1,11 @@
+<div class="giphy-search-title">
+  Word or Phrase
+</div>
+<div class="giphy-search-form">
+  <input value={{@term}} {{on "change" (fn @termChanged)}} />
+</div>
+<div class="giphy-search-results">
+  {{#each @results as |gif|}}
+    <img src={{gif.originalFixedHeightSmallUrl}} alt={{gif.title}}>
+  {{/each}}
+</div>
