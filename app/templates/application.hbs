@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
+<h1>Gifstory</h1>
+<GiphySearch as |search|>
+  <GiphyResults 
+    @term={{search.currentSearchTerm}} 
+    @results={{search.searchResults}}
+    @termChanged={{search.searchTermChanged}}
+  />
+</GiphySearch>
 {{outlet}}

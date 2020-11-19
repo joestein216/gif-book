@@ -1,0 +1,10 @@
+body {
+  font-family: Arial;
+  font-size: 16px;
+}
+h1 {
+  font-size: 1.5rem;
+}
+.giphy-search-title, .giphy-search-form, .giphy-search-results {
+  padding: 10px;
+}
